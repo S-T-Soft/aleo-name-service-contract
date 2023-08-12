@@ -9,9 +9,8 @@ The Aleo Name Service (ANS) integrates seamlessly with Aleo's decentralized netw
 
 ## How to Use
 
-1. **Deploy the Contract**: Compile and deploy the contract on the Aleo network.
-2. **Interact with the Contract**: Use Aleo's contract calling mechanism to invoke various functions. Or use our website: https://aleonames.id
-
+The simplest way to use ANS is through our official website: https://aleonames.id. 
+Additionally, you can register domain names via the snarkos command line or through aleo.tools.
 
 ## Structures, Mappings, and Functions
 The contract defines several data structures and functions for the name service. Here is a brief overview of the main components:
