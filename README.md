@@ -2,6 +2,19 @@
 
 This contract provides a domain name service on the Aleo platform, allowing users to manage, resolve, and set domain names along with associated resolvers. By offering a decentralized domain name system, it enhances the Aleo ecosystem's functionality, allowing for human-readable addresses and enhancing privacy and security.
 
+### Resolvers
+
+Resolvers are a crucial part of this contract, allowing users to set custom domain name resolutions. For instance, users can link their domain names to specific addresses or handles. A user can resolve "btc" to their Bitcoin address or "twitter" to their Twitter handle. This feature enhances user experience, making it easier to link and share blockchain-related information using familiar terms.
+
+#### Third party resolvers
+You can set a third party resolver for your domain name.
+The third party resolver is a program that contains `ResolverIndex` struct and `resolvers` mapping.
+You can check the [resolver_example.leo](https://github.com/S-T-Soft/aleo-name-service-contract/blob/main/resolver_example.leo) for example.
+Please note that you need to add `set_resolver` and any other necessary functions to your program.
+
+To use a third party resolver, you need to set the resolver for your domain name.
+Call the `set_resolver` function with `category=0u128` and `content=YOUR PROGRAM NAME` to set the resolver for your domain name.
+
 ### Why It Adds Value to the Aleo Ecosystem
 
 The Aleo Name Service (ANS) integrates seamlessly with Aleo's decentralized network. It promotes user-friendliness by translating cryptographic addresses into human-readable names, thus making transactions more transparent and easier to conduct. Furthermore, the system's decentralized nature ensures that control and management of domain names remain in the hands of the users, promoting trust and integrity within the community.
@@ -11,6 +24,8 @@ The Aleo Name Service (ANS) integrates seamlessly with Aleo's decentralized netw
 
 The simplest way to use ANS is through our official website: https://aleonames.id. 
 Additionally, you can register domain names via the snarkos command line or through aleo.tools.
+
+**Set Resolvers**: Utilize the `set_resolver()` function to create custom resolutions for specific domain names.
 
 ## Structures, Mappings, and Functions
 The contract defines several data structures and functions for the name service. Here is a brief overview of the main components:
