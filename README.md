@@ -13,7 +13,7 @@ You can check the [resolver_example.leo](https://github.com/S-T-Soft/aleo-name-s
 Please note that you need to add `set_resolver` and any other necessary functions to your program.
 
 To use a third party resolver, you need to set the resolver for your domain name.
-Call the `set_resolver` function with `category=0u128` and `content=YOUR PROGRAM NAME` to set the resolver for your domain name.
+Call the `set_resolver` function with `category=8243124901069940082u128`(`8243124901069940082u128` means `resolver`) and `content=YOUR PROGRAM NAME` to set the resolver for your domain name.
 
 ### Why It Adds Value to the Aleo Ecosystem
 
