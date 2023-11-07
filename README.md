@@ -73,3 +73,6 @@ The contract defines several data structures and functions for the name service.
 ## Contributing
 
 Contributions to the AleoNames contract are welcome. Please feel free to submit a pull request or open an issue if you encounter any problems or have suggestions for improvements.
+
+## Author
+Discord Username: snowtigersoft
